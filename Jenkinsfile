@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Code') {
             steps {
-                git 'https://github.com/<username>/springboot-ci-cd.git'
+                checkout scm
             }
         }
 
@@ -16,24 +16,24 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t <dockerhub-username>/app:latest .'
+                sh 'docker build -t prahladdev/app:latest .'
             }
         }
 
         stage('Push to DockerHub') {
             steps {
-                sh 'docker push <dockerhub-username>/app:latest'
+                sh 'docker push prahladdev/app:latest'
             }
         }
 
         stage('Deploy to App Server') {
             steps {
                 sh '''
-                ssh ubuntu@<APP_PUBLIC_IP> \
-                "docker pull <dockerhub-username>/app:latest && \
+                ssh -o StrictHostKeyChecking=no ubuntu@16.16.128.99 \
+                "docker pull prahladdev/app:latest && \
                 docker stop app || true && \
                 docker rm app || true && \
-                docker run -d -p 8080:8080 --name app <dockerhub-username>/app:latest"
+                docker run -d -p 8080:8080 --name app prahladdev/app:latest"
                 '''
             }
         }
