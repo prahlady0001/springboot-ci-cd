@@ -9,6 +9,6 @@ public class HelloController {
 
     @GetMapping("/")
     public String hello() {
-        return "test Jenkinsfile 🚀🚀🚀🚀🚀🚀";
+        return "Time setup for jenkins 🚀🚀🚀🚀🚀🚀";
     }
 }
