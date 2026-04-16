@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKER_HUB_CREDENTIALS = 'docker-cred'
         IMAGE_NAME = 'prahladdev/springboot-app'
-        EC2_IP = '13.235.18.11'
+        EC2_IP = '13.206.163.6'
     }
 
     stages {
