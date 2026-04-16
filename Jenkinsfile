@@ -49,7 +49,7 @@ pipeline {
                     docker pull ${IMAGE_NAME}
                     docker stop app || true
                     docker rm app || true
-                    docker run -d -p 8081:8081 --name app ${IMAGE_NAME}
+                    docker run -d -p 8081:8081 --name app --restart=always ${IMAGE_NAME}
                     '
                     """
                 }
