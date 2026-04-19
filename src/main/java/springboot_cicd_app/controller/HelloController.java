@@ -9,6 +9,6 @@ public class HelloController {
 
     @GetMapping("/")
     public String hello() {
-        return "Time setup for jenkins 🚀🚀🚀🚀🚀🚀";
+        return "Nginx setup for jenkins 🚀🚀🚀🚀🚀🚀";
     }
 }
