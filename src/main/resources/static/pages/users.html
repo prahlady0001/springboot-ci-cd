@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Admin</h2>
+
+        <a href="dashboard.html">📊 Dashboard</a>
+        <a href="users.html">👤 Users</a>
+        <a href="tables.html">📁 Tables</a>
+        <a href="settings.html">⚙ Settings</a>
+        <a href="../index.html">🚪 Logout</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <div class="navbar">
+            <h3>User Management</h3>
+            <span>Total Users: 5</span>
+        </div>
+
+        <!-- Search Box -->
+        <input type="text" id="search" placeholder="Search user..." onkeyup="searchUser()">
+
+        <!-- Users Table -->
+        <table id="userTable">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Rahul</td>
+                <td>rahul@gmail.com</td>
+                <td>Admin</td>
+                <td><button class="delete">Delete</button></td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Amit</td>
+                <td>amit@gmail.com</td>
+                <td>User</td>
+                <td><button class="delete">Delete</button></td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Sneha</td>
+                <td>sneha@gmail.com</td>
+                <td>User</td>
+                <td><button class="delete">Delete</button></td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Vikram</td>
+                <td>vikram@gmail.com</td>
+                <td>Manager</td>
+                <td><button class="delete">Delete</button></td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Pooja</td>
+                <td>pooja@gmail.com</td>
+                <td>User</td>
+                <td><button class="delete">Delete</button></td>
+            </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="../js/users.js"></script>
+</body>
+</html>

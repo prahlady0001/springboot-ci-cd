@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Admin</h2>
+
+        <a href="dashboard.html">📊 Dashboard</a>
+        <a href="users.html">👤 Users</a>
+        <a href="tables.html">📁 Tables</a>
+        <a href="settings.html">⚙ Settings</a>
+        <a href="../index.html">🚪 Logout</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <!-- Top Navbar -->
+        <div class="navbar">
+            <h3>Dashboard Overview</h3>
+            <span>Welcome Admin</span>
+        </div>
+
+        <!-- Cards Section -->
+        <div class="cards">
+
+            <div class="card">
+                <h3>Users</h3>
+                <p id="users">1200</p>
+            </div>
+
+            <div class="card">
+                <h3>Revenue</h3>
+                <p id="revenue">₹ 85,000</p>
+            </div>
+
+            <div class="card">
+                <h3>Orders</h3>
+                <p id="orders">320</p>
+            </div>
+
+            <div class="card">
+                <h3>Growth</h3>
+                <p id="growth">+24%</p>
+            </div>
+
+        </div>
+
+        <!-- Chart Section (Simple JS Box) -->
+        <div class="chart-box">
+            <h3>Analytics (Mock Data)</h3>
+            <div class="bar" style="width:70%">Sales</div>
+            <div class="bar" style="width:50%">Users</div>
+            <div class="bar" style="width:90%">Traffic</div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../js/dashboard.js"></script>
+</body>
+</html>
