@@ -5,7 +5,7 @@ spring:
   datasource:
     url: jdbc:mysql://mydb.cte24o88i4yg.ap-south-1.rds.amazonaws.com:3306/testdb
     username: admin
-    password: prahlad!yadav
+    password: ${DB_PASSWORD}
 
   jpa:
     hibernate:
