@@ -12,7 +12,7 @@ spring:
       ddl-auto: update
     show-sql: true
 
-  aws:
-    s3:
-      bucket-name: prahlad-dev-upload-bucket
-      region: ap-south-1
+aws:
+  s3:
+    bucket-name: prahlad-dev-upload-bucket
+    region: ap-south-1
